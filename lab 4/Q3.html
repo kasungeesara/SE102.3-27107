@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Confirm Box Example</title>
+</head>
+<body>
+    <button onclick="redirectToGoogle()">Google</button>
+
+    <script>
+        function redirectToGoogle() {
+
+            var confirmation = confirm("Do you want to visit Google?");
+
+
+            if (confirmation) {
+                window.location.href = "https://www.google.com";
+            } else {
+                alert("You decided to stay.");
+            }
+        }
+    </script>
+</body>
+</html>

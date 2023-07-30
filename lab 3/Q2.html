@@ -1,0 +1,23 @@
+<html>
+<head>
+    <title>Average Calculator</title>
+</head>
+<body>
+    <script>
+        var a = parseFloat(prompt("Enter the number 01:", ""));
+        var b = parseFloat(prompt("Enter the number 02:", ""));
+        var c = parseFloat(prompt("Enter the number 03:", ""));
+        var d = parseFloat(prompt("Enter the number 04:", ""));
+        var e = parseFloat(prompt("Enter the number 05:", ""));
+
+        if (isNaN(a) || isNaN(b) || isNaN(c) || isNaN(d) || isNaN(e)) {
+            document.write("Invalid input. Please enter valid numbers.");
+        } else {
+            var average = (a + b + c + d + e) / 5;
+            document.write("The average is " + average);
+            var sum=(a+b+c+d+e);
+            document.write("sum is "+sum);
+        }
+    </script>
+</body>
+</html>

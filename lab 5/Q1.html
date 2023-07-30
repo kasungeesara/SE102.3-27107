@@ -1,0 +1,45 @@
+<html>
+<head>
+    <title>Mathematical Operations</title>
+</head>
+<body>
+    <script>
+
+        function add(a, b) {
+            return a + b;
+        }
+
+        function subtract(a, b) {
+            return a - b;
+        }
+
+        function divide(a, b) {
+            return a / b;
+        }
+
+        function multiply(a, b) {
+            return a * b;
+        }
+
+        var inputA = prompt("Enter the first number:");
+        var inputB = prompt("Enter the second number:");
+
+        var numA = parseFloat(inputA);
+        var numB = parseFloat(inputB);
+
+        if (isNaN(numA) || isNaN(numB)) {
+            alert("Invalid input. Please enter valid numbers.");
+        } else {
+            var sum = add(numA, numB);
+            var difference = subtract(numA, numB);
+            var quotient = divide(numA, numB);
+            var product = multiply(numA, numB);
+
+            alert("Addition: " + sum +
+                  "\nSubtraction: " + difference +
+                  "\nDivision: " + quotient +
+                  "\nMultiplication: " + product);
+        }
+    </script>
+</body>
+</html>

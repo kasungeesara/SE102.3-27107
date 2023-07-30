@@ -1,0 +1,24 @@
+<html>
+<head>
+<title> NSBM </title>
+</head>
+<style>
+
+h2{
+	color:red;
+  }
+h1{
+	color:black;
+  	background-color:yellow;
+	background-size:50%
+  }
+
+</style>
+</head>
+
+<body>
+<body background="green3.jpg" style="background-repeat:no-repeat;background-size:100%100%">
+<h2><center> QUOTES FOR LIFE</center></h2>
+<h1><p><center> "you only live once,<br> but if you do it right,<br>once is enough"</center></p></h1>
+</body>
+</html>

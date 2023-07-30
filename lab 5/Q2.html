@@ -1,0 +1,26 @@
+<html>
+<head>
+    <title>Year of Birth from NIC Number</title>
+</head>
+<body>
+    <script>
+        function getYearOfBirth(nicNumber) {
+
+            if (!isNaN(nicNumber) && nicNumber.length >= 4) {
+
+                var yearDigits = nicNumber.substring(0, 4);
+                var yearOfBirth = parseInt(yearDigits);
+                var currentYear = new Date().getFullYear();
+                return currentYear - yearOfBirth;
+            } else {
+                return "Invalid NIC number. Please enter a valid NIC number with at least 4 digits.";
+            }
+        }
+
+        var nicNumber = prompt("Enter the NIC number:");
+
+        var yearOfBirth = getYearOfBirth(nicNumber);
+        alert("Year of Birth: " + yearOfBirth);
+    </script>
+</body>
+</html>
